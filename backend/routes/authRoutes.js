@@ -3,8 +3,6 @@ const router = express.Router();
 const db = require('../db');
 const bcrypt = require('bcryptjs'); 
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = 'your_jwt_secret_key';
-
 
 router.post('/register', async (req, res) => {
     console.log("Register API Hit with Body:", req.body);
